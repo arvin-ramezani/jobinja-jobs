@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v28.0.0/dist/font-face.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="nav-icon.css">
+    <link rel="stylesheet" href="header__bottom.css">
+    <link rel="stylesheet" href="job-search.css">
+    <link rel="stylesheet" href="new-ads.css">
+    <link rel="stylesheet" href="jobinja-body.css">
+    <link rel="stylesheet" href="sidebar.css">
+    <link rel="stylesheet" href="sticky.css">
+    <link rel="stylesheet" href="jobinja--footer.css">
+
+
+    <title>jobinja__header</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="">
+                <div class="header__top--background">
+                    <div class="header__top container">
+                        <div class="mobile__header">
+                            <div class="header__flex-item1">
+                                <div class="z-index">
+                                    <div class="nav-icon" onclick="toggleNavbar()">
+                                        <a href="#"></a>
+                                    </div>
+                                    <div class="mobile__nav-content" id="burger-target">
+                                        <nav class="mobile__content">
+                                            <ul>
+                                                <li><a href="#">خانه</a></li>
+                                                <li><a href="#" class="active">جستجوی مشاغل</a></li>
+                                                <li><a href="#">رزومه ساز</a></li>
+                                                <li><a href="#">50 شرکت برتر</a></li>
+                                                <li><a href="#">بخش کارفرمایان</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                                <a href="#" class="header__search">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div>
+                            <div class="header__flex-item2">
+                                <a href="#" class="header__brand">
+                                    <b class="header__brand--bold">
+                                        jobinja
+                                    </b>
+                                </a>
+                            </div>
+                            <div class="header__flex-item3">
+                                <a href="#" class="header__notification">
+                                    <i class="fa fa-bell">
+                                        <span class="header__notification-conter">1</span>
+                                    </i>
+                                </a>
+                                <a href="#" class="header__user">
+                                    <i class="fa fa-user"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="header__big-size container">
+                            <div class="header__navigation">
+                                <div class="header__big-navbar">
+                                    <ul>
+                                        <li><a href="#"><i class="fa fa-home"></i>خانه</a></li>
+                                        <li><a href="#" class="active"><i class="fa fa-search"></i>جستجوی مشاغل</a></li>
+                                        <li><a href="#"><i class="fa fa-star"></i>رزومه ساز</a></li>
+                                        <li><a href="#"><i class="fas fa-bahai"></i>50 شرکت برتر</a></li>
+                                        <li><a href="#"><i class="fas fa-briefcase"></i>قسمت کارفرمایان</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="header__profile">
+                                <a href="#">
+                                    <i class="fa fa-bell">
+                                        <span class="header__notification-conter">1</span>
+                                    </i>                       
+                                </a>
+                                <a href="#" class="header__profile--scale-anime">
+                                    <i class="fa fa-user"></i>
+                                    ثبت نام کارجو
+                                </a><a href="#" class="header__profile--scale-anime">
+                                    <i class="fas fa-sign-out-alt"></i>
+                                    ورود کارجو
+                                </a><a href="#" id="brand">
+                                    <h1 id="brand__text">jobinja</h1>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__bottom--background">
+                    <div class="wrapper__header-bottom container">
+                        <div class="header__horizontal-nav">
+                            <ul class="header__horizontal-nav">
+                                <li><a href="#" class="active">جستجو</a></li>
+                                <li><a href="#">درخواست های من</a></li>
+                                <li><a href="#">نشان شده ها</a></li>
+                                <li><a href="#">آگهی های پیشنهادی</a></li>
+                            </ul>
+                        </div>
+                        <div class="header__new-ads-btn">
+                            <a href="#">از آگهی های جدید باخبر شو</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="job-search container">
+            <form>
+                <div class="job-search__input">
+                    <i class="fa fa-search"></i>
+                    <input type="text" placeholder="عنوان شغلی، مهارت یا ..." >
+                </div>
+                <div class="job-search__location job-search__mobile--hidden">
+                    <i class="fa fa-map"></i>
+                    <select name="location" id="location">
+                        <option value="همه ی استان ها">همه ی استان ها</option>
+                        <option value="تهران">تهران</option>
+                        <option value="مازندران">مازندران</option>
+                        <option value="شیراز">شیراز</option>
+                        <option value="تبریز">تبریز</option>
+                    </select>
+                </div>
+                <div class="job-search__category job-search__mobile--hidden">
+                    <i class="fa fa-bars"></i>
+                    <select name="category" id="category">
+                        <option value="همه ی دسته بندی ها">همه ی دسته بندی ها</option>
+                        <option value="تهران">تهران</option>
+                        <option value="مازندران">مازندران</option>
+                        <option value="شیراز">شیراز</option>
+                        <option value="تبریز">تبریز</option>
+                    </select>
+                </div>
+                <div class="job-search__btn job-search__mobile--hidden">
+                    <button type="submit" class="btn">جستجو</button>
+                </div>
+            </form>
+        </div>
+        <div class="main container">
+            <div class="sidebar">
+                <div class="new-ads">
+                    <div><h1 class="new-ads__header">
+                        از نتایج جدید جستجو بلافاصله مطلع شوید
+                    </h1></div>
+                    <div class="new-ads__body">
+                        <a href="#" id="new-ads__link">
+                            <p>
+                                + نتایج جدید را خبر بده
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="sidebar__filter">
+                    <div class="sidebar__category">
+                        <div class="sidebar__header">
+                            <i class="fa fa-bars"></i>
+                            <h3>دسته بندی ها</h3>
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </div>
+                        <ul>
+                            <li>
+                                <input type="checkbox">
+                                <span>وب، برنامه نویسی، نرم افزار</span>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <span>فروش و بازاریابی</span>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <span>تولید و بازاریابی</span>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <span>مالی و حسابداری</span>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <span>طراحی</span>
+                            </li>
+                        </ul>
+                        <a href="#" class="sidebar__more-link">+ موارد بیشتر</a>
+                    </div>
+                    <div class="sidebar__location">
+                        <div class="sidebar__header">
+                            <i class="fa fa-bars"></i>
+                            <h3>دسته بندی ها</h3>
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </div>
+                        <ul>
+                            <li>
+                                <input type="checkbox">
+                                <span>تهران</span>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <span>مازندران</span>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <span>شیراز</span>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <span>اصفهان</span>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <span>تبریز</span>
+                            </li>
+                        </ul>
+                        <a href="#" class="sidebar__more-link">+ موارد بیشتر</a>
+                    </div>
+                    <div class="sidebar__contract">
+                        <div class="sidebar__header">
+                            <i class="fa fa-bars"></i>
+                            <h3>دسته بندی ها</h3>
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </div>
+                        <ul>
+                            <li>
+                                <input type="checkbox">
+                                <span>پاره وقت</span>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <span>تمام وقت</span>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <span>قراردادی</span>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <span>دورکاری</span>
+                            </li>
+                        </ul>
+                        <a href="#" class="sidebar__more-link">+ موارد بیشتر</a>
+                    </div>
+                    <div class="sidebar__experience">
+                        <div class="sidebar__header">
+                            <i class="fa fa-bars"></i>
+                            <h3>دسته بندی ها</h3>
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </div>
+                        <ul>
+                            <li>
+                                <input type="checkbox">
+                                <span>کمتر از دو سال</span>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <span>سه تا شش سال</span>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <span>بیش از شش سال</span>
+                            </li>
+                        </ul>
+                        <a href="#" class="sidebar__more-link">+ موارد بیشتر</a>
+                    </div>
+                    <div class="salary">
+                        <div class="sidebar__header">
+                            <i class="fa fa-bars"></i>
+                            <h3>دسته بندی ها</h3>
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </div>
+                        <ul>
+                            <li>
+                                <input type="checkbox">
+                                <span>توافقی</span>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <span>حقوق پایه(وزارت کار)</span>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <span>از سه میلیون تومان</span>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <span>از چهار میلیون تومان</span>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <span>از پنج میلیون تومان</span>
+                            </li>
+                        </ul>
+                        <a href="#" class="sidebar__more-link">+ موارد بیشتر</a>
+                    </div>
+                </div>
+                <div class="sidebar__resome">
+                    <a href="#">
+                        <img src="images/cvbuilder.png" alt="create-a-resome">
+                    </a>
+                </div>
+            </div>
+            <main>
+                <div class="search-result">
+                    <div class="search-result__header">
+                        <div class="search-result__jobs-counter">
+                            <span>
+                                19,888
+                            </span><span>
+                                فرصت شغلی فعال
+                            </span>
+                        </div>
+                        <div class="search-result__filter-block">
+                            <div class="search-result__filter">
+                                <i class="fa fa-filter"></i>
+                                <span class="mobile-hidden">جستجوی پیشرفته</span>
+                            </div>
+                            <div class="search-result__sort">
+                                <select name="search-result__sort" id="search-result-sort">
+                                    <option value="مرتبط بودن">مرتبط بودن</option>
+                                    <option value="جدیدترین">جدیدترین</option>
+                                    <option value="بیشترین حقوق">بیشترین حقوق</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="search-result__block">
+                        <div class="search-result__item">
+                            <div class="search-result__img">
+                                <img src="images/main.webp" alt="office profile picture" />
+                            </div>
+                            <div class="search-result__body">
+                                <div class="search-result__title">
+                                    <h1>Key Account Manager</h1>
+                                    <span>(امروز)</span>
+                                </div>
+                                <div class="search-result__details">
+                                    <div class="search-result__name-company">
+                                        <i class="fas fa-building"></i>
+                                        <span>
+                                            تیمچه
+                                        </span>
+                                        <span>|</span>
+                                        <span>
+                                            timche
+                                        </span>
+                                    </div>
+                                    <div class="search-result__location">
+                                        <i class="fa fa-map"></i>
+                                        <span>تهران</span>
+                                        <span>،</span>
+                                        <span>تهران</span>
+                                    </div>
+                                    <div class="search-result__contract">
+                                        <i class="fas fa-briefcase"></i>
+                                        <span>
+                                            قرارداد تمام وقت 
+                                        </span>
+                                        <span>
+                                            (برای مشاهده حقوق وارد شوید)
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="search-result__footer">
+                                <div class="search-result__submit">
+                                    <button type="submit">ارسال رزومه</button>
+                                </div>
+                                <div class="search-result__save">
+                                    <i class="fa fa-star"></i>
+                                    <span>نشان کردن</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="search-result__block">
+                        <div class="search-result__item fori">
+                            <div class="search-result__img">
+                                <img src="images/main.webp" alt="office profile picture" />
+                            </div>
+                            <div class="search-result__body">
+                                <div class="search-result__title">
+                                    <h1>Key Account Manager</h1>
+                                    <span>(امروز)</span>
+                                </div>
+                                <div class="search-result__details">
+                                    <div class="search-result__name-company">
+                                        <i class="fas fa-building"></i>
+                                        <span>
+                                            تیمچه
+                                        </span>
+                                        <span>|</span>
+                                        <span>
+                                            timche
+                                        </span>
+                                    </div>
+                                    <div class="search-result__location">
+                                        <i class="fa fa-map"></i>
+                                        <span>تهران</span>
+                                        <span>،</span>
+                                        <span>تهران</span>
+                                    </div>
+                                    <div class="search-result__contract">
+                                        <i class="fas fa-briefcase"></i>
+                                        <span>
+                                            قرارداد تمام وقت 
+                                        </span>
+                                        <span>
+                                            (برای مشاهده حقوق وارد شوید)
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="search-result__submit">
+                                    <button type="submit">ارسال رزومه</button>
+                                </div>
+                                <div class="search-result__save">
+                                    <i class="fa fa-star"></i>
+                                    <span>نشان کردن</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="search-result__block">
+                        <div class="search-result__item fori">
+                            <div class="search-result__img">
+                                <img src="images/main.webp" alt="office profile picture" />
+                            </div>
+                            <div class="search-result__body">
+                                <div class="search-result__title">
+                                    <h1>Key Account Manager</h1>
+                                    <span>(امروز)</span>
+                                </div>
+                                <div class="search-result__details">
+                                    <div class="search-result__name-company">
+                                        <i class="fas fa-building"></i>
+                                        <span>
+                                            تیمچه
+                                        </span>
+                                        <span>|</span>
+                                        <span>
+                                            timche
+                                        </span>
+                                    </div>
+                                    <div class="search-result__location">
+                                        <i class="fa fa-map"></i>
+                                        <span>تهران</span>
+                                        <span>،</span>
+                                        <span>تهران</span>
+                                    </div>
+                                    <div class="search-result__contract">
+                                        <i class="fas fa-briefcase"></i>
+                                        <span>
+                                            قرارداد تمام وقت 
+                                        </span>
+                                        <span>
+                                            (برای مشاهده حقوق وارد شوید)
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="search-result__submit">
+                                    <button type="submit">ارسال رزومه</button>
+                                </div>
+                                <div class="search-result__save">
+                                    <i class="fa fa-star"></i>
+                                    <span>نشان کردن</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sticky" id="sticky">
+                    <div class="sticky__content">
+                        <i class="fa fa-bell fa-2x"></i>
+                        <h2>نتایج جدید را به من خبر بده !</h2>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <div>
+            <footer class="jobinjaFooter">
+                <div class="footer__nav container">
+                    <nav class="navigation-block">
+                        <div class="footer__karjuyan">
+                            <div class="footer__header" id="footer-nav">
+                                <h3>کارجویان</h3>
+                                <!-- <i>&#708;</i> -->
+                                <i>&#709;</i>
+                            </div>
+                            <ul id="navigation-body">
+                                <li><a href="#">آگهی های استخدام</a></li>
+                                <li><a href="#">ورود/ثبت نام کارجو</a></li>
+                                <li><a href="#">ایمیل های اطلاع رسانی</a></li>
+                                <li><a href="#">رزومه ساز آنلاین</a></li>
+                                <li><a href="#">آشنایی با شرکت ها</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__kar-farmayan">
+                            <div class="footer__header">
+                                <h3>کارفرمایان</h3>
+                                <!-- <i>&#708;</i> -->
+                                <i>&#709;</i>
+                            </div>
+                            <ul>
+                                <li><a href="#">درج آگهی استخدام</a></li>
+                                <li><a href="#">ورود به بخش کارفرمایان</a></li>
+                                <li><a href="#">تعرفه انتشار آگهی</a></li>
+                                <li><a href="#">سوالات متداول</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__jobinja">
+                            <div class="footer__header">
+                                <h3>جابینجا</h3>
+                                <!-- <i>&#708;</i> -->
+                                <i>&#709;</i>
+                            </div>
+                            <ul>
+                                <li><a href="#">تماس با جابینجا</a></li>
+                                <li><a href="#">جابینجا در رسانه ها</a></li>
+                                <li><a href="#">راهنمای استفاده برای کارجویان</a></li>
+                                <li><a href="#">وبلاگ</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer--large-screen">
+                            <h3 class="footer__header">
+                                جابینجا در شبکه های اجتماعی
+                            </h3>
+                            <div class="social-media--large">
+                                <div>
+                                    <img src="images/icons8-instagram-48.png" alt="instagram">
+                                </div>
+                                <div>
+                                    <img src="images/icons8-twitter-circled-48.png" alt="twitter">
+                                </div>
+                                <div>
+                                    <img src="images/icons8-telegram-app-48.png" alt="telegram">
+                                </div>
+                                <div>
+                                    <img src="images/icons8-linkedin-48.png" alt="linkedin">
+                                </div>
+                            </div>
+                            <div class="footer__about">
+                                <h5>
+                                    jobinja
+                                </h5>
+                                <p>
+            با معتبرترین شرکت‌های کشور آشنا شوید و محل کار آینده خود را هوشمندانه انتخاب کنید.
+                                </p>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="footer__main">
+                    <div class="social-media">
+                        <div>
+                            <img src="images/icons8-instagram-48.png" alt="instagram">
+                        </div>
+                        <div>
+                            <img src="images/icons8-twitter-circled-48.png" alt="twitter">
+                        </div>
+                        <div>
+                            <img src="images/icons8-telegram-app-48.png" alt="telegram">
+                        </div>
+                        <div>
+                            <img src="images/icons8-linkedin-48.png" alt="linkedin">
+                        </div>
+                    </div>
+                    <div class="footer__text">
+                        <div>
+                            <h5>
+                                jobinja
+                            </h5>
+                            <p>
+    با معتبرترین شرکت‌های کشور آشنا شوید و محل کار آینده خود را هوشمندانه انتخاب کنید.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="license">
+                        <p class="license__text">©️ تمامی حقوق برای جابینجا محفوظ است.</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+    <script src="jobSearchAnimations.js"></script>
+    <script src="jobinjaFooter.js"></script>
+</body>
+</html>
