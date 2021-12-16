@@ -1,0 +1,299 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: vazir;
+  background-color: #f5f5f5;
+}
+
+* a {
+  text-decoration: none;
+}
+
+main {
+  position: relative;
+}
+
+.header__top--background {
+  background-color: #444;
+}
+
+.header__top > .mobile__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.header__flex-item1,
+.header__flex-item2,
+.header__flex-item3 {
+  display: flex;
+  gap: 0.8rem;
+  padding: 0.5rem 0.5rem;
+  align-items: center;
+}
+
+.header__flex-item1 .z-index {
+  z-index: 1;
+}
+
+.header__flex-item1 > a,
+.header__flex-item2 > a,
+.header__flex-item3 > a {
+  font-size: 1.25rem;
+  color: #777;
+}
+
+.header__flex-item3 > a > i.fa-bell {
+  position: relative;
+}
+
+.header__flex-item3 i.fa-bell > span {
+  position: absolute;
+  top: -0.75rem;
+  left: 0;
+  background-color: red;
+  color: #fff;
+  padding: 0.15rem;
+  border-radius: 0.2rem;
+  font-size: 0.7rem;
+  top: -10px;
+}
+
+.header__flex-item1 > a.header__burger {
+  color: #fff;
+}
+
+div.mobile__nav-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: #555;
+  opacity: 0;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: all 0.3s ease-in;
+}
+
+div.mobile__nav-content.active {
+  opacity: 1;
+  transform: scaleY(1);
+  transition: all 0.3s ease-in;
+}
+
+div.mobile__nav-content ul li {
+  border-bottom: 1px solid #666;
+}
+
+div.mobile__nav-content ul li a {
+  display: block;
+  padding: 0.999rem 1.25rem;
+  color: #fff;
+  font-size: 0.875rem;
+}
+
+div.mobile__nav-content ul li a.active {
+  background-color: #505050;
+}
+
+.header__top .header__brand--bold {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.header__top .header__big-size {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+}
+
+.header__top .header__big-size ul {
+  display: flex;
+}
+
+.header__top .header__big-size ul li a {
+  color: #fff;
+  padding: 1.5rem 0.5rem;
+  display: flex;
+  align-items: center;
+  line-height: 1.5rem;
+}
+
+.header__top .header__big-size ul li {
+  position: relative;
+}
+
+.header__top .header__big-size ul li:hover {
+  background-color: #505050;
+}
+
+.header__top .header__big-size ul li a.active {
+  background-color: #505050;
+}
+
+.header__top .header__big-size ul li:hover a > i {
+  transform: scale(1.4);
+  color: rgb(192, 216, 14);
+}
+
+.header__top .header__big-size ul li:last-child a {
+  color: #aaa;
+}
+
+.header__top .header__big-size ul li a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0.02rem;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  border-right: 1px solid hsla(0, 0%, 100%, 0.1);
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.header__top .header__big-size ul li a > i {
+  padding-left: 0.7rem;
+}
+
+.header__top .header__profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 12px;
+}
+
+.header__top .header__profile > a {
+  color: #e5e5e5;
+  display: flex;
+  align-items: center;
+  gap: 0.02rem;
+}
+
+.header__top .header__profile--scale-anime:hover {
+  transform: scale(1.2);
+}
+
+.header__top .header__profile > a > i {
+  margin-left: 0.3rem;
+  color: #777;
+}
+
+.header__top .header__profile > a > i.fa-bell {
+  font-size: 1rem;
+  position: relative;
+}
+
+.header__top .header__profile > a > i.fa-bell:hover {
+  color: #fff;
+}
+
+.header__top .header__profile > a > i.fa-bell > span {
+  position: absolute;
+  background-color: red;
+  color: #fff;
+  padding: 0.2rem;
+  border-radius: 0.2rem;
+  font-size: 0.7rem;
+  top: -10px;
+  left: -7px;
+}
+
+.header__top .header__profile > a#brand {
+  position: relative;
+  padding: 1.5rem 1rem;
+}
+
+.header__top .header__profile > a#brand::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 0.02rem;
+  border-right: 1px solid hsla(0, 0%, 100%, 0.1);
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.header__top .header__profile > a#brand::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 0.02rem;
+  border-right: 1px solid hsla(0, 0%, 100%, 0.1);
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.header__top .header__profile > a#brand > h1 {
+  font-size: 2rem;
+  display: inherit;
+  padding: 0 0.5rem;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+/* Media Query */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 740px;
+    margin: 0 auto;
+  }
+
+  .header__top > .mobile__header {
+    display: flex;
+  }
+
+  .header__top .header__big-size {
+    display: none;
+  }
+
+  .job-search {
+    margin: 1.25rem auto;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .container {
+    max-width: 960px;
+  }
+
+  .header__top > div.mobile__header {
+    display: none;
+  }
+
+  .header__top .header__big-size {
+    display: flex;
+  }
+
+  .main {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  main {
+    width: 75%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1160px;
+  }
+}

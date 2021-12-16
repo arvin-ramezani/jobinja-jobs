@@ -1,0 +1,27 @@
+.new-ads {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background: #ffffff;
+  padding: 1rem 2rem;
+  gap: 1.4rem;
+  align-items: center;
+  font-size: 14px;
+  border: 1px solid #d0d0d0;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .new-ads {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .new-ads {
+    display: flex;
+    align-items: center;
+    height: fit-content;
+  }
+}
